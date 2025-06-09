@@ -13,7 +13,6 @@ public class DbService : IDbService
         _context = context;
     }
 
-
     public async Task<RacerParticipationDto> GetRacerParticipations(int racerId)
     {
         var racer = await _context.Racers

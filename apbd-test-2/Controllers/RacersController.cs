@@ -29,7 +29,7 @@ public class RacersController : ControllerBase
         }
         catch (Exception ex)
         {
-            return NotFound(new { message = ex.Message });
+            return NotFound($"Racer with ID {racerId} not found.");
         }
     }
 }
