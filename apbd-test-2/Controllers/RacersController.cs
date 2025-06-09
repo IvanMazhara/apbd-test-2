@@ -15,7 +15,7 @@ public class RacersController : ControllerBase
     }
     
     [HttpGet]
-    [Route("{id}/participations")]
+    [Route("{racerId}/participations")]
     public async Task<IActionResult> GetRacerParticipations(int racerId)
     {
         try
