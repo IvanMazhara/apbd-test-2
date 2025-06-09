@@ -8,7 +8,7 @@ public class DbService : IDbService
 {
     private readonly DatabaseContext _context;
 
-    DbService(DatabaseContext context)
+    public DbService(DatabaseContext context)
     {
         _context = context;
     }
